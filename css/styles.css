@@ -150,11 +150,11 @@ address {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/people-office.jpg");
+    url("../images/people-office-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  min-width: 100%;
   margin: 0 auto;
 }
 
@@ -164,15 +164,17 @@ address {
 
 .hero-cont {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
+
 .hero-title {
   color: #ffffff;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   letter-spacing: 0.02em;
-  line-height: 1.07;
+  line-height: 1.11;
   text-align: center;
   max-width: 496px;
   margin-bottom: 48px;
@@ -721,6 +723,19 @@ img {
     width: 768px;
   }
 
+  .hero-sect {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-tabl.jpg");
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
   .hero-block-list {
     gap: 72px 24px;
   }
@@ -752,6 +767,14 @@ img {
   .container {
     min-width: 1158px;
     padding: 0 15px 0 15px;
+  }
+  .hero-sect {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office.jpg");
+    max-width: 1440px;
   }
 
   .hero-block-list {

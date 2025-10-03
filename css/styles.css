@@ -36,11 +36,12 @@ body {
 }
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px 0 15px;
+  width: 320px;
+  padding: 0 16px 0 16px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .navg {
   display: flex;
   align-items: center;
@@ -158,8 +159,9 @@ address {
   margin: 0 auto;
 }
 
-.hero-block {
-  padding: 32px 0;
+.hero-icon {
+  visibility: hidden;
+  height: 0;
 }
 
 .hero-cont {
@@ -201,6 +203,8 @@ address {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero-block {
@@ -209,26 +213,16 @@ img {
 
 .hero-block-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
+
 .hero-charast {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .charast {
-  width: calc((100% - 3 * 24px) / 4);
-}
-
-.hero-icon {
-  background: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
+  width: 100%;
 }
 
 .hero-featr-cont {
@@ -242,18 +236,20 @@ img {
 }
 
 .hero-list {
+  text-align: center;
   color: #2e2f42;
-  text-align: left;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
 
 .hero-list-description {
-  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
+  color: #434455;
   letter-spacing: 0.02em;
 }
 
@@ -270,16 +266,18 @@ img {
 
 .hero-our-team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .hero-team {
   border-radius: 0 0 4px 4px;
   line-height: 1.333;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
 }
+
 .name-cont {
   padding: 32px 0;
 }
@@ -289,8 +287,9 @@ img {
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  width: calc((100% - 3 * 24px) / 4);
+  width: 100%;
 }
+
 .socials {
   display: flex;
   justify-content: center;
@@ -712,3 +711,127 @@ img {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .hero-block-list,
+  .hero-team {
+    gap: 72px 24px;
+  }
+  .charast,
+  .hero-team-card {
+    width: calc((100% - 3 * 24px) / 4);
+  } */
+
+  /* .page-footer {
+    padding-top: 96px;
+    flex-wrap: nowrap;
+  }
+  .footer-cont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    text-align: none;
+    padding-top: 0;
+  }
+  .footer-desc {
+    margin-left: 108px;
+    margin-right: 24px;
+    display: block;
+  }
+  .footer-socials-text {
+    text-align: left;
+  }
+  .footer-subscribe {
+    padding-left: 108px;
+  } 
+}*/
+
+/* @media screen and (min-width: 1440px) {
+  .container {
+    min-width: 1158px;
+    padding: 0 15px 0 15px;
+  }
+  .hero-block {
+    padding: 32px 0;
+  }
+  .hero-block-list,
+  .hero-team {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .hero-charast,
+  .hero-our-team {
+    padding: 120px 0;
+  }
+  .charast,
+  .hero-team-card {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+  .hero-icon {
+    visibility: visible;
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .hero-list {
+    text-align: left;
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .hero-list-description {
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-desc {
+  margin-right: 120px;
+    display: none;
+  }
+  .footer-cont {
+    display: none;
+    flex-wrap: nowrap;
+  }
+  .footer-logo {
+    text-align: none;
+    padding-top: 0;
+  }
+  .footer-socials-text {
+    margin-top: 0;
+    text-align: none;
+  }
+  .socials-footer {
+    gap: 24px;
+    justify-content: space-between;
+  }
+  .socials-footer-mail {
+    display: none;
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .footer-subscribe {
+    padding-bottom: 0;
+    margin-left: 80px;
+  }
+  .socials-footer-mail {
+    justify-content: none;
+  }
+
+  .subscribe-input {
+    opacity: 1;
+  }
+} 

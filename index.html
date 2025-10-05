@@ -53,12 +53,77 @@
           <a href="./index.html" class="header-logo"
             >Web<span class="accent">Studio</span></a
           >
-          <a href="./index.html" class="burger-button">
+          <button type="button" class="burger-button">
             <svg class="icon-burger" width="24" height="24">
               <use href="./images/icons.svg#icon-burger" />
             </svg>
-          </a>
+          </button>
         </nav>
+      </div>
+
+      <div class="mob-menu-container">
+        <button type="button" class="mob-modal-close">
+          <svg class="input-icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+        <div class="mob-menu-navg">
+          <nav class="mob-navg">
+            <ul class="mob-menu">
+              <li>
+                <a href="./index.html" class="mob-header-link current"
+                  >Studio</a
+                >
+              </li>
+              <li><a href="" class="mob-header-link">Portfolio</a></li>
+              <li><a href="" class="mob-header-link">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mob-menu-adr">
+          <address class="mob-address-list">
+            <ul class="mob-menu-items">
+              <li>
+                <a href="tel:+110001111111" class="mob-address current">
+                  +11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mob-address"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="mob-socials-block">
+          <ul class="mob-socials">
+            <li class="socials-list">
+              <a href="" class="social-button"
+                ><svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-inst" /></svg
+              ></a>
+            </li>
+            <li class="socials-list">
+              <a href="" class="social-button"
+                ><svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twit" /></svg
+              ></a>
+            </li>
+            <li class="socials-list">
+              <a href="" class="social-button"
+                ><svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-fb" /></svg
+              ></a>
+            </li>
+            <li class="socials-list">
+              <a href="" class="social-button"
+                ><svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-lnkd" /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -595,7 +660,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="backdrop is-open" hidden>
+    <div class="backdrop is-open" hidden>
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="input-icon-close" width="8" height="8">
@@ -675,13 +740,15 @@
                   <use href="./images/icons.svg#icon-check" />
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="policy">Privacy Policy</a>
+              <span class="accept-terms-policy">
+                I accept the terms and conditions of the
+                <a href="" class="policy">Privacy Policy</a></span
+              >
             </label>
           </div>
           <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>

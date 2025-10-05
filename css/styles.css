@@ -265,7 +265,7 @@ address {
 }
 
 .hero-sect {
-  padding: 188px 0;
+  padding: 72px 0;
   background-color: #2e2f42;
   background-repeat: no-repeat;
   background-position: center;
@@ -285,10 +285,6 @@ address {
       ),
       url("../images/people-office-mob-2x.jpg");
   }
-}
-
-.hero-block {
-  padding: 32px 0;
 }
 
 .hero-cont {
@@ -344,7 +340,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
-  padding: 0 16px;
+  justify-content: center;
 }
 .hero-charast {
   padding: 96px 0;
@@ -375,6 +371,7 @@ img {
   border-radius: 0 0 4px 4px;
   line-height: 1.333;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-list {
@@ -411,10 +408,9 @@ img {
 }
 
 .hero-team {
-  border-radius: 0 0 4px 4px;
-  line-height: 1.333;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 72px;
 }
@@ -895,6 +891,7 @@ img {
   }
 
   .hero-sect {
+    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -921,13 +918,16 @@ img {
   }
 
   .hero-team {
-    gap: 24px;
-    padding: 0 108px;
+    gap: 64px 24px;
   }
 
-  .charast,
+  .charast {
+    width: calc((100% - 24px) / 2);
+  }
+
   .hero-team-card {
     width: calc((100% - 24px) / 2);
+    max-width: 264px;
   }
 
   .team-card-scnd {
@@ -998,6 +998,7 @@ img {
 
   .hero-sect {
     max-width: 1440px;
+    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -1066,6 +1067,10 @@ img {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  .hero-list-description {
+    font-weight: 400;
   }
 
   .hero-our-team {
